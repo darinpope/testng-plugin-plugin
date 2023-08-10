@@ -15,6 +15,8 @@ jobs:
         shell: sh
         run: |
           echo "hello world"
+      - name: checkout
+        uses: cloudbees-io/checkout@v1
       - name: Maven
         uses: docker://maven:3.9.3-eclipse-temurin-17-alpine
         shell: sh
